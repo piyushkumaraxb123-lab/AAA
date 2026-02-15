@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Talk Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background:#f5f5f5; }
+    header { background:#222; color:#fff; padding:15px; text-align:center; }
+    nav a { color:#fff; margin:0 10px; text-decoration:none; }
+    .container { padding:20px; max-width:800px; margin:auto; background:#fff; }
+    h2 { margin-top:0; }
+    form input, form textarea, form select { width:100%; padding:10px; margin:8px 0; }
+    button { padding:10px 20px; background:#222; color:#fff; border:none; cursor:pointer; }
+    footer { text-align:center; padding:10px; color:#666; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Talk & Problems Portal</h1>
+    <nav>
+      <a href="#official">Official Talk</a>
+      <a href="#unofficial">Unofficial Talk</a>
+      <a href="#reason">Reason</a>
+      <a href="#problem">Submit Problem</a>
+    </nav>
+  </header>  <div class="container" id="official">
+    <h2>1. Official Talk</h2>
+    <p>Yahan official baatein aur serious discussion hogi.</p>
+  </div>  <div class="container" id="unofficial">
+    <h2>2. Unofficial Talk</h2>
+    <p>Yahan casual / unofficial baatein likhi ja sakti hain.</p>
+  </div>  <div class="container" id="reason">
+    <h2>Second Slide – Reason</h2>
+    <p>Is section me reason ya explanation daal sakte ho.</p>
+  </div>  <div class="container" id="problem">
+    <h2>Submit Your Problem</h2>
+    <!-- Formspree ya kisi bhi email service ka action link yahan daalo -->
+    <form action="https://formspree.io/f/XXXXYYYY" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="problem" rows="5" placeholder="Write your problem here" required></textarea>
+      <button type="submit">Send Problem</button>
+    </form>
+    <p><small>Note: Is form ke through saari problems email par aa jayengi (Formspree use karke).</small></p>
+  </div>  <footer>
+    ©️ 2026 Simple Website
+  </footer>
+</body>
+</html>
